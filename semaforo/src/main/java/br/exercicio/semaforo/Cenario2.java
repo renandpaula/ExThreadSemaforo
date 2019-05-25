@@ -43,7 +43,7 @@ public class Cenario2 extends JFrame{
 		});
 	}
 
-	public Cenario2() {
+	public Cenario2() throws InterruptedException {
 		
 		constroiCenario();
 		

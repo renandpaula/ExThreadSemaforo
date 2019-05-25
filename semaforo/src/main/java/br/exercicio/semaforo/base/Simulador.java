@@ -23,18 +23,21 @@ public class Simulador {
 		new Thread(farol).start();
 	}
 
-	public synchronized void simularCenario2() {
+	public synchronized void simularCenario2() throws InterruptedException {
 		Farol farol = listaFarol.get(0);
 		Farol farol2 = listaFarol.get(1);
 		farol.setLuz(3);
 		farol.setTipo(1);
 		farol2.setLuz(1);
 		farol2.setTipo(2);
-		new Thread(farol).start();
-		new Thread(farol2).start();
+		Thread t1 = new Thread(farol);
+		t1.start();
+		
+		Thread t2 =  new Thread(farol2);
+		t2.start();
 	}
 
-	public synchronized void simularCenario3() {
+	public void simularCenario3() {
 		
 		Farol farol = listaFarol.get(0);
 		Farol farol2 = listaFarol.get(1);
