@@ -6,6 +6,9 @@ import java.util.List;
 public class Simulador {
 
 	private List<Farol> listaFarol =  new ArrayList<Farol>();
+	private Farol farol = new Farol();
+	private Farol farol2 = new Farol();
+	private Farol farol3 = new Farol();
 	
 	
 	public Simulador(List<Farol> listaFarol) {

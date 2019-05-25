@@ -82,17 +82,19 @@ public class Cenario1 extends JFrame {
 		cenario.add(farolVerde);
 		farol.setFarolVerde(farolVerde);
 		
-		/* Paisagem */
-		paisagem.setBounds(0, 0, 700, 700);
-		paisagem.setIcon(new ImageIcon("imagens/fundo.png"));
-		cenario.add(paisagem);
-		
 		/* Carro 1 */
 		carro.setIcon(new ImageIcon("imagens/carros/carro4.png"));
 		carro.setBounds(54, 381, 115, 64);
 		carro.setVisible(true);
 		cenario.add(carro);
 		farol.setCarro(carro);
+		
+		/* Paisagem */
+		paisagem.setBounds(0, 0, 700, 700);
+		paisagem.setIcon(new ImageIcon("imagens/fundo.png"));
+		cenario.add(paisagem);
+		
+	
 		
 		/* Adiciona os farois na lista */
 		listaFarol.add(farol);

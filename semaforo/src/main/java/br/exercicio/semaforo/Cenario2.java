@@ -101,11 +101,6 @@ public class Cenario2 extends JFrame{
 		cenario.add(farolVerde2);
 		farol2.setFarolVerde(farolVerde2);
 		
-		/* Paisagem */
-		paisagem.setBounds(0, 0, 700, 700);
-		paisagem.setIcon(new ImageIcon("imagens/fundo.png"));
-		cenario.add(paisagem);
-		
 		/* Carro 1 */
 		carro.setIcon(new ImageIcon("imagens/carros/carro4.png"));
 		carro.setBounds(54, 381, 115, 64);
@@ -117,6 +112,11 @@ public class Cenario2 extends JFrame{
 		carro2.setBounds(387, 550, 64, 115);
 		cenario.add(carro2);
 		farol2.setCarro(carro2);
+		
+		/* Paisagem */
+		paisagem.setBounds(0, 0, 700, 700);
+		paisagem.setIcon(new ImageIcon("imagens/fundo.png"));
+		cenario.add(paisagem);
 		
 		/* Adiciona os farois na lista */
 		listaFarol.add(farol);
